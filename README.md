@@ -5,6 +5,8 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-2. Setup environment var SERVER_IP
+2. uv sync
 
-3. `nohup uv run main.py > out.log &`
+3. Setup environment var SERVER_IP
+
+4. `nohup uv run main.py > out.log &`
