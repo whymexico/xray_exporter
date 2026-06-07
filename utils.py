@@ -15,7 +15,7 @@ async def get_metrics() -> str:
     """Get metric from current endpoint"""
     async with httpx.AsyncClient() as client:
         r = await client.get(
-            url=f"http://{SERVER_IP}/debug/vars"
+            url=f"http://{SERVER_IP}:11111/debug/vars"
         )
         if r.status_code != 200:
             logger.warning(f"Status Code: {r.status_code}")

@@ -6,7 +6,7 @@ router = APIRouter(prefix="/metrics")
 @router.get("/")
 async def metrics_wrapper():
     data = await get_metrics()
-    data = process_metrics(data)
+    data = await process_metrics(data)
     
     return data
 
